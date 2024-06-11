@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignmen 4</title>
+    <style>
+        html {
+            padding: 0px;
+            font-size: 1.2em;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            background-color: rgb(173, 255, 47);
+            padding: 3px;
+
+        }
+
+        img {
+            width: 70vw;
+        }
+
+        .top {
+            text-align: center;
+            font-size: 1.1em;
+            border:4px solid red;
+            background-color:rgb(236, 208, 72);
+        }
+        .top:hover{
+            box-shadow: inset 4px -2px 20px 9px red;
+            
+        }
+
+        form>div {
+            border: 2px dashed rgb(27, 6, 250);
+            font-size: 1.5em;
+            background-color: yellow;
+        }
+
+        form div li {
+
+            background-color: rgb(243, 180, 104);
+            border-radius: 5px;
+
+        }
+
+        form>div>h3 {
+            color: rgb(1, 152, 4);
+            background-color: rgb(250, 206, 195);
+
+            border-radius: 7px;
+            width: 20vw;
+            text-align: center;
+
+        }
+
+        div li:hover {
+            background-color: rgb(243, 155, 48);
+        }
+        
+        
+        div label:hover {
+            border-radius: 4px;
+            background-color: blueviolet;
+        }
+
+        div label:active {
+            background-color: rgb(188, 135, 238);
+        }
+        
+        
+        header a{
+            color: blue;
+        }
+        a{
+            color: yellow;
+        }
+        a:hover{
+            color:white
+        }
+        textarea {
+            font-size: 1.2em;
+            
+        }
+        .comments li{
+            margin:3vh
+        }
+        .general input {
+            font-size: .85em;
+        }
+        
+        .buttons{
+            display: flex;
+            justify-content: center;
+            gap:9px;
+        }
+        .buttons input{
+            font-size: 0.7em;
+        }
+        .buttons input:active{
+            color: white;
+            background-color: brown;
+        }
+        footer{
+            background-color: rgb(24, 1, 140);
+            color: rgb(40, 255, 2);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="banner">
+        <img src="centennialbanner.jpeg" alt="banner image">
+        <a href="http://www.centennialcollege.ca" target="_blank">Go to Home page</a>
+    </header>
+    <div class="top">
+        <h1>Centennial College</h1>
+        <h2>Continuing Education Course/ Instructor Evaluation</h2>
+        <p>Please read each statement carefully and consider each one individually. Use the computer card to make you
+            choice. Select one answer at a time</p>
+    </div>
+
+    <form >
+        <div class="general">
+            <div>
+                <label for="coursename">Course Name/Code</label>
+                <input type="text" name="coursename" id="coursename">
+            </div>
+            <div>
+                Semester:
+                <label for="fall">Fall</label>
+                <input type="radio" required name="Semester" id="fall" value="Fall">
+                <label for="winter">Winter</label>
+                <input type="radio" required name="Semester" id="winter" value="winter">
+                <label for="summer">Summer/Spring</label>
+                <input type="radio" required name="Semester" id="summer" value="summer">
+                <label for="year">Year: </label>
+                <input type="date" required name="year" id="year">
+            </div>
+            <div>
+                <label for="proff">Instructor</label>
+                <input type="text" name="proff" require required id="proff">
+            </div>
+
+        </div>
+        <div class="instructor">
+            <h3>Instructor's</h3>
+            <h4>How would you rate instructor's :</h4>
+            <ol type="1">
+                <li>
+                    <p><strong>Knowledge</strong> of subject?</p>
+                    <label for="excellent1">Excellent</label>
+                    <input type="radio" required name="Knowledge" id="excellent1">
+                    <label for="good1">Good</label>
+                    <input type="radio" required name="Knowledge" id="good1">
+                    <label for="fair1">Fair</label>
+                    <input type="radio" required name="Knowledge" id="fair1">
+                    <label for="notsatisfy1">Not Satisfactory</label>
+                    <input type="radio" required name="Knowledge" id="notsatisfy1">
+                </li>
+                <li>
+                    <p><strong>Helpfulness?</strong></p>
+                    <label for="excellent2">Excellent</label>
+                    <input type="radio" required name="Helpfulness" id="excellent2">
+                    <label for="good2">Good</label>
+                    <input type="radio" required name="Helpfulness" id="good2">
+                    <label for="fair2">Fair</label>
+                    <input type="radio" required name="Helpfulness" id="fair2">
+                    <label for="notsatisfy2">Not Satisfactory</label>
+                    <input type="radio" required name="Helpfulness" id="notsatisfy2">
+                </li>
+                <li>
+                    <p><strong>Courtesy and respect</strong> for all students?</p>
+                    <label for="excellent3">Excellent</label>
+                    <input type="radio" required name="respect" id="excellent3">
+                    <label for="good3">Good</label>
+                    <input type="radio" required name="respect" id="good3">
+                    <label for="fair3">Fair</label>
+                    <input type="radio" required name="respect" id="fair3">
+                    <label for="notsatisfy3">Not Satisfactory</label>
+                    <input type="radio" required name="respect" id="notsatisfy3">
+                </li>
+                <li>
+                    <p>Overall <strong>Performance</strong></p>
+                    <label for="excellent4">Excellent</label>
+                    <input type="radio" required name="overall" id="excellent4">
+                    <label for="good4">Good</label>
+                    <input type="radio" required name="overall" id="good4">
+                    <label for="fair4">Fair</label>
+                    <input type="radio" required name="overall" id="fair4">
+                    <label for="notsatisfy4">Not Satisfactory</label>
+                    <input type="radio" required name="overall" id="notsatisfy4">
+                </li>
+            </ol>
+
+        </div>
+        <div class="course">
+            <h3>Course</h3>
+
+            <ol type="1">
+                <li>
+                    <p> How would you rate the <strong>Course materials</strong></p>
+                    <label for="excellent5">Excellent</label>
+                    <input type="radio" required name="materials" id="excellent5">
+                    <label for="good5">Good</label>
+                    <input type="radio" required name="materials" id="good5">
+                    <label for="fair5">Fair</label>
+                    <input type="radio" required name="materials" id="fair5">
+                    <label for="notsatisfy5">Not Satisfactory</label>
+                    <input type="radio" required name="materials" id="notsatisfy5">
+                </li>
+                <li>
+                    <p> How much did this course met your <strong>expectations</strong></p>
+                    <label for="excellent6">Excellent</label>
+                    <input type="radio" required name="expectations" id="excellent6">
+                    <label for="good6">Good</label>
+                    <input type="radio" required name="expectations" id="good6">
+                    <label for="fair6">Fair</label>
+                    <input type="radio" required name="expectations" id="fair6">
+                    <label for="notsatisfy6">Not Satisfactory</label>
+                    <input type="radio" required name="expectations" id="notsatisfy6">
+                </li>
+                <li>
+                    <p> How would you rate this course <strong>overall</strong></p>
+                    <label for="excellent7">Excellent</label>
+                    <input type="radio" required name="rate" id="excellent7">
+                    <label for="good7">Good</label>
+                    <input type="radio" required name="rate" id="good7">
+                    <label for="fair7">Fair</label>
+                    <input type="radio" required name="rate" id="fair7">
+                    <label for="notsatisfy7">Not Satisfactory</label>
+                    <input type="radio" required name="rate" id="notsatisfy7">
+                </li>
+            </ol>
+        </div>
+        <div class="info">
+            <h3>General Information</h3>
+            <ol type="1">
+                <li>
+                    <p> Was the <strong> course outline</strong> reviewed at beginning of the course?</p>
+                    <label for="yes1">Yes</label>
+                    <input type="radio" required name="overall" id="yes1">
+                    <label for="no1">Good</label>
+                    <input type="radio" required name="overall" id="no1">
+                    <label for="notsure1">Not sure</label>
+                    <input type="radio" required name="overall" id="notsure1">
+
+                </li>
+                <li>
+                    <p> Would you <strong>recommend</strong> this course to a friend?</p>
+                    <label for="yes2">Yes</label>
+                    <input type="radio" required name="recommend" id="yes2">
+                    <label for="no2">Good</label>
+                    <input type="radio" required name="recommend" id="no2">
+                    <label for="notsure2">Not sure</label>
+                    <input type="radio" required name="recommend" id="notsure2">
+
+                </li>
+            </ol>
+        </div>
+        <div class="comments">
+            <h3>Any other comments</h3>
+            <ol type="1">
+                <li>
+                    <label for="best_thing">What is the <strong>best thing</strong> about this course?</label>
+                    <textarea name="best_thing" id="best_thing" cols="30" rows="1"></textarea>
+                </li>
+                <li>
+                    <label for="improve_course">How could we <strong>improve</strong> this course?</label>
+                    <textarea name="improve_course" id="improve_course" cols="30" rows="1"></textarea>
+                </li>
+                <li>
+                    <label for="others">Other:</label><br>
+                    <textarea name="other" id="improve_course" cols="30" rows="5"></textarea>
+                </li>
+            </ol>
+        </div>
+        <div class="buttons">
+            <input type="submit" name="submit" id="submit">
+            <input type="reset">
+        </div>
+    </form>
+    <footer>
+        <p>Thank you! We pay attention to your feedback!
+        Website: <a href="https://www.centennialcollege.ca/">www.centennialcollege.ca</a> Email us at: <a href="mailto:ce@centennialcollege.ca">ce@centennialcollege.ca</a></p>
+        <p>&copy; Harsh Eary - (301419409) / COMP213 Semester 1 / Assignment #4 / <a href="../index.html"> Go to Landing Page</a></p>
+    </footer>
+    
+</body>
+
+</html>
